@@ -1,0 +1,55 @@
+/* Center the chessboard on the screen */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#gamebord {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.brown {
+    background-color: rgb(146, 38, 38);
+}
+
+.beige {
+    background-color: rgb(245, 183, 141);
+}
+
+.valid-move {
+    outline: 2px solid green;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.white-piece {
+    color: #fff;
+   
+}
+
+.black-piece {
+    color: #000;
+    
+}
